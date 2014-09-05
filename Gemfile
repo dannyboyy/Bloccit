@@ -35,3 +35,5 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'faker'
 # Use Devise for user authentication
 gem 'devise'
+# Use Figaro to handle sensitive data with environment variables
+gem 'figaro'
