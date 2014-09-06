@@ -37,3 +37,5 @@ gem 'faker'
 gem 'devise'
 # Use Figaro to handle sensitive data with environment variables
 gem 'figaro'
+# Use Pundit for user authorization
+gem 'pundit'
