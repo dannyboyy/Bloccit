@@ -39,3 +39,5 @@ gem 'devise'
 gem 'figaro'
 # Use Pundit for user authorization
 gem 'pundit'
+# Use Redcarpet for Markdown
+gem 'redcarpet'
