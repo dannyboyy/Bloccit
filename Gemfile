@@ -41,3 +41,6 @@ gem 'figaro'
 gem 'pundit'
 # Use Redcarpet for Markdown
 gem 'redcarpet'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
