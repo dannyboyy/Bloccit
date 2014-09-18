@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :destroy]
   end
 
+  post 'posts/:id/up-vote' => 'votes#up_vote', as: :up_vote
+  post 'posts/:id/down-vote' => 'votes#down_vote', as: :down_vote
+
   get 'about' => 'welcome/about'
 
   root 'welcome#index'
