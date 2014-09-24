@@ -6,8 +6,12 @@ class VotesController < ApplicationController
     redirect_to :back
   end
 
+  def down_vote
+    update_vote(-1)
 
-
+    # no flash message, just want it to "happen"
+    redirect_to :back
+  end
 
   private
 

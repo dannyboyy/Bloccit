@@ -21,7 +21,7 @@ class FavoritesController < ApplicationController
 
     if favorite.destroy
         flash[:notice] = "Removed from favorites."
-        redirect_to @post
+        redirect_to [@post.topic, @post]
       else
         flash[:error] = "There was an error removing the post from favorites."
         redirect_to @post
