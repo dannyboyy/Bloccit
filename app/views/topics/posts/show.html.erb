@@ -12,9 +12,13 @@
     <p><%= image_tag(@post.image_url) if @post.image? %></p>
 
     <h1>Comments</h1>
-      <%= render partial: 'comments/comment', collection: @comments, locals: { topic: @topic, post: @post } %>
+      <div class='js-comments'>
+        <%= render partial: 'comments/comment', collection: @comments, locals: { topic: @topic, post: @post } %>
+      </div>
     <h4>Add a comment:</h4>
-      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+      <div class='new-comment'>
+        <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+      </div>
   
  
   </div>
